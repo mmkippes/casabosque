@@ -44,19 +44,41 @@
     </header>
 
     <main>
-        <h2>Habitaciones</h2>
-
-        <p>La cocina esta completamente equipada para cumplir con todas tus necesidades culinarias.</p>
-        <img src="../assets/images/cocina.jpeg" alt="Imagen de la cocina">
-
-        <p>El comedor es justo como para disfrutar de una buena comida en familia.</p>
-        <img src="../assets/images/comedor.jpeg" alt="Imagen del comedor">
-
-        <p>El sanitario tiene todo lo necesario para que estes lo mas comodo posible en tu estadia.</p>
-        <img src="../assets/images/sanitario.jpeg" alt="Imagen del sanitario">
-
-        <p>El exterior te facilita la conexion con el hermoso bosque y los alrededores de la casa.</p>
-        <img src="../assets/images/exterior.jpeg" alt="Imagen del exterior">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../assets/images/cocina.jpeg" alt="Imagen de la cocina" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Cocina</h2>
+                        <h5>La cocina esta completamente equipada para cumplir con todas tus necesidades culinarias.
+                        </h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/images/comedor.jpeg" alt="Imagen del comedor" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Comedor</h2>
+                        <h5>El comedor es justo como para disfrutar de una buena comida en familia.</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/images/exterior.jpeg" alt="Imagen del exterior" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Exterior</h2>
+                        <h5>El exterior te facilita la conexion con el hermoso bosque y los alrededores de la casa.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </main>
 
     <footer>
