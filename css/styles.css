@@ -8,7 +8,7 @@ body {
 }
 
 main {
-    padding-top: 8vh;
+    margin-top: 8vh;
 }
 
 header {
@@ -87,8 +87,23 @@ label {
 
 #imgBosque {
     width: 100%;
+    height: 250px;
 }
 
 .contactFormDiv {
     padding: 5px;
+}
+
+#carouselExample {
+    width: 58%;
+}
+
+.custom-height {
+    height: 80vh;
+}
+
+@media (min-width: 1000px) {
+    .custom-height {
+        height: 80vh;
+    }
 }
