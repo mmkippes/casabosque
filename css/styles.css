@@ -23,7 +23,7 @@ header {
 h1,
 h4,
 nav ul li a {
-    color: #006400;
+    color: #009000;
     margin: 0;
 }
 
@@ -42,7 +42,7 @@ nav ul li a {
 }
 
 h2 {
-    color: #006400;
+    color: #009000;
     margin-top: 0;
 }
 
@@ -65,7 +65,7 @@ label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #006400;
+    color: #009000;
 }
 
 #nombre,
@@ -78,18 +78,23 @@ label {
     border-radius: 4px;
 }
 
-#enviar {
+#enviar,
+#contactar {
     padding: 10px 20px;
-    background-color: #006400;
+    background-color: #009000;
     color: #fff;
     border: none;
     border-radius: 4px;
+    transition: background-color 0.5s ease;
+}
+
+#enviar:hover {
+    background-color: #005000;
 }
 
 #imgBosque {
     width: 100%;
     height: 250px;
-    filter: brightness(90%);
 }
 
 .contactFormDiv {
@@ -110,7 +115,7 @@ label {
 
 #cardImg {
     width: 100%;
-    height: 49vh;
+    height: 43vh;
 }
 
 @media (max-width: 1000px) {
@@ -126,5 +131,14 @@ label {
     #cardImg {
         width: 100%;
         height: auto;
+    }
+
+    #imgBosque {
+        width: 100%;
+        height: 15vh;
+    }
+
+    #contactar {
+        margin-bottom: 1vh;
     }
 }
