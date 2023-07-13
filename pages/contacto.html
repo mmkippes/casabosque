@@ -45,26 +45,84 @@
 
     <main>
         <div class="container-fluid">
-            <div class="card border-success">
-                <div class="card-header text-center border-success">Contacto</div>
-                <div class="card-body">
-                    <form>
-                        <div class="contactFormDiv mb-3">
-                            <label for="nombre" class="form-label">Nombre:</label>
-                            <input type="text" id="nombre" name="nombre" required>
-                        </div>
-                        <div class="contactFormDiv mb-3">
-                            <label for="email" class="form-label">Email:</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="contactFormDiv mb-3">
-                            <label for="mensaje" class="form-label">Mensaje:</label>
-                            <input type="text" id="mensaje" name="mensaje" required></input>
-                        </div>
-                        <input type="submit" id="enviar" value="Enviar">
-                    </form>
+            <div class="row">
+                <h5 class="center mb-3">Consultanos sobre tu proxima reserva!</h5>
+                <div class="col">
+                    <p class="card-text text-start">
+                        La casa es perfecta para cuatro personas, con dos dormitorios cómodos. Hay un baño moderno y
+                        amplio con ducha y artículos de tocador de lujo. Además, cuenta con un hermoso jardín, terraza
+                        privada y parrilla para disfrutar al aire libre.
+                        <br>
+                        Estamos disponibles las 24 horas para responder a tus preguntas y brindarte recomendaciones
+                        sobre actividades locales. ¡Reserva ahora y disfruta de San Martín de los Andes!
+                        <br>
+                        A continuacion te dejamos las tarifas para que estes al tanto de cuanto cuestar alojarte en
+                        nuestra casa. Los precios son para tanto para 1 persona como para 4.
+                    </p>
+                </div>
+                <div class="col">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Duración de la estadía</th>
+                                <th scope="col">Tarifa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Noche</td>
+                                <td>$10000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Semana</td>
+                                <td>$60000</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mes</td>
+                                <td>$200000</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
+            <form>
+                <div class="contactFormDiv mb-3">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text border-success" id="Nombre">Nombre</span>
+                        <input type="text" class="form-control border-success" placeholder="Nombre" aria-label="Nombre"
+                            aria-describedby="Nombre">
+                    </div>
+                </div>
+                <div class="contactFormDiv mb-3">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text border-success" id="Email">Email</span>
+                        <input type="text" class="form-control border-success" placeholder="Email" aria-label="Email"
+                            aria-describedby="Email">
+                    </div>
+                </div>
+                <div class="contactFormDiv mb-3">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text border-success" id="Celular">Celular</span>
+                        <input type="number" class="form-control border-success" placeholder="Celular"
+                            aria-label="Celular" aria-describedby="Celular">
+                    </div>
+                </div>
+                <div class="contactFormDiv mb-3">
+                    <div class="input-group">
+                        <span class="input-group-text border-success" id="Mensaje">Mensaje</span>
+                        <textarea class="form-control border-success" placeholder="Dejanos tu mensaje..."
+                            aria-label="Mensaje" aria-describedby="Mensaje" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="center">
+                    <button class="btn btn-danger m-2" type="submit">Borrar</button>
+                    <button class="btn btn-success m-2" type="submit">Enviar</button>
+                </div>
+            </form>
         </div>
     </main>
 
