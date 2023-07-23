@@ -143,6 +143,11 @@ form {
   align-items: center;
 }
 
+#forestHouseIcon {
+  height: 32px;
+  width: 32px;
+}
+
 .custom-fluid {
   height: 79vh;
 }

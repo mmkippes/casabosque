@@ -146,6 +146,11 @@ form {
     align-items: center;
 }
 
+#forestHouseIcon {
+    height: 32px;
+    width: 32px;
+  }
+
 // Implementación de condicionales
 $use-custom-height: true;
 @if $use-custom-height {
