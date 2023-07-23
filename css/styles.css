@@ -51,7 +51,6 @@ p {
 footer {
   background-color: #d2f4d2;
   padding: 20px;
-  text-align: center;
   margin-top: auto;
 }
 
@@ -146,6 +145,18 @@ form {
 #forestHouseIcon {
   height: 32px;
   width: 32px;
+}
+
+#copyright {
+  text-align: center;
+}
+
+#footerRow {
+  align-items: baseline;
+}
+
+#redesSociales {
+  display: block;
 }
 
 .custom-fluid {
