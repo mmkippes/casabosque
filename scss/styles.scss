@@ -166,7 +166,7 @@ $colors: (
 );
 
 @each $key, $color in $colors {
-  .#{$key}-text {
+  .#{"" + $key}-text {
     color: $color;
   }
 }
