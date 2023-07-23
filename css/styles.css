@@ -1,143 +1,144 @@
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: #f0fff0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #d2f4d2;
 }
 
 main {
-    margin-top: 9vh;
+  margin-top: 9vh;
 }
 
 header {
-    background-color: #d2f4d2;
+  background-color: #d2f4d2;
 }
 
 #navColor {
-    background-color: #d2f4d2 !important;
+  background-color: #d2f4d2 !important;
 }
 
-h1,
-h4,
-nav ul li a {
-    color: #009000;
-    margin: 0;
+h1, h4, nav ul li a {
+  color: #009000;
+  margin: 0;
 }
 
 nav ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul li {
-    display: inline-block;
-    margin-right: 10px;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 nav ul li a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 h2 {
-    color: #009000;
-    margin-top: 0;
+  color: #009000;
+  margin-top: 0;
 }
 
 p {
-    color: #008000;
+  color: #008000;
 }
 
 footer {
-    background-color: #d2f4d2;
-    padding: 20px;
-    text-align: center;
-    margin-top: auto;
+  background-color: #d2f4d2;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
 }
 
 form {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 #contactar {
-    padding: 10px 20px;
-    background-color: #009000;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    transition: background-color 0.5s ease;
+  padding: 10px 20px;
+  background-color: #009000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.5s ease;
 }
-
 #contactar:hover {
-    background-color: #005000;
+  background-color: #005000;
 }
 
 #imgBosque {
-    width: 100%;
-    height: 250px;
+  width: 100%;
+  height: 250px;
 }
 
 .contactFormDiv {
-    padding: 5px;
+  padding: 5px;
 }
 
 .custom-fluid {
-    height: 79vh;
+  height: 79vh;
 }
 
 #carouselExample {
-    width: 80%;
+  width: 80%;
+}
+@media (max-width: 1000px) {
+  #carouselExample {
+    width: 100%;
+    margin-top: 10vh;
+  }
 }
 
 .text-shadow {
-    text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 2px black;
 }
 
 #cardImg {
-    width: 100%;
-    height: 43vh;
+  width: 100%;
+  height: 43vh;
 }
 
 #pagSinTerminar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #tituloMain {
-    margin-bottom: 0;
-    font-weight: bold;
+  margin-bottom: 0;
+  font-weight: bold;
 }
 
 .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 1000px) {
-    .custom-fluid {
-        height: 60vh;
-    }
-
-    #carouselExample {
-        width: 100%;
-        margin-top: 10vh;
-    }
-
-    #cardImg {
-        width: 100%;
-        height: auto;
-    }
-
-    #imgBosque {
-        width: 100%;
-        height: 15vh;
-    }
-
-    #contactar {
-        margin-bottom: 1vh;
-    }
+  .custom-fluid {
+    height: 60vh;
+  }
+  #carouselExample {
+    width: 100%;
+    margin-top: 10vh;
+  }
+  #cardImg {
+    width: 100%;
+    height: auto;
+  }
+  #imgBosque {
+    width: 100%;
+    height: 15vh;
+  }
+  #contactar {
+    margin-bottom: 1vh;
+  }
 }
+
+/*# sourceMappingURL=styles.css.map */
