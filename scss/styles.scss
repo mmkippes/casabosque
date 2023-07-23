@@ -73,15 +73,25 @@ form {
     border: none;
     border-radius: 4px;
     transition: background-color 0.5s ease;
+    margin-bottom: 1vh;
 
     &:hover {
         background-color: $colorHoverGreen;
+    }
+
+    @media (min-width: 1250px) {
+        margin-top: 2vh;
     }
 }
 
 #imgBosque {
     width: 100%;
     height: 250px;
+
+    @media (max-width: 1000px) {
+        width: 100%;
+        height: 15vh;
+    }
 }
 
 .contactFormDiv {
@@ -90,6 +100,10 @@ form {
 
 .custom-fluid {
     height: 79vh;
+
+    @media (max-width: 1000px) {
+        height: 60vh !important;
+    }
 }
 
 #carouselExample {
@@ -108,6 +122,11 @@ form {
 #cardImg {
     width: 100%;
     height: 43vh;
+
+    @media (max-width: 1000px) {
+        width: 100%;
+        height: auto;
+    }
 }
 
 #pagSinTerminar {
@@ -127,27 +146,70 @@ form {
     align-items: center;
 }
 
-@media (max-width: 1000px) {
-    .custom-fluid {
-        height: 60vh;
-    }
-
-    #carouselExample {
-        width: 100%;
-        margin-top: 10vh;
-    }
-
-    #cardImg {
-        width: 100%;
-        height: auto;
-    }
-
-    #imgBosque {
-        width: 100%;
-        height: 15vh;
-    }
-
-    #contactar {
-        margin-bottom: 1vh;
-    }
+// Implementación de condicionales
+$use-custom-height: true;
+@if $use-custom-height {
+  .custom-fluid {
+      height: 79vh;
+  }
+} @else {
+  .custom-fluid {
+      height: 60vh;
+  }
 }
+
+// Implementación de each y maps
+$colors: (
+    nature: #00bb00,
+    dark: #000000,
+    snow: #00bbbb,
+);
+
+@each $key, $color in $colors {
+  .#{$key}-text {
+    color: $color;
+  }
+}
+
+// Implementación de extend
+.button {
+  padding: 10px;
+  background-color: #009900;
+  color: #fff;
+}
+
+.submit-button {
+  @extend .button;
+  font-size: 16px;
+}
+
+// Implementación de mixins
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -moz-transform: $property;
+    -ms-transform: $property;
+    -o-transform: $property;
+    transform: $property;
+  }
+  
+  @mixin opacity($opacityValue) {
+    opacity: $opacityValue;
+  }
+  
+  .appear {
+    @include opacity(0);
+    @include transform(translateX(0) translateY(0));
+    transition: opacity 1s ease;
+    animation: fadeIn 5s ease 0.25s forwards;
+  
+    &.show {
+      @include opacity(1);
+    }
+  }
+
+  @keyframes fadeIn {
+    to {
+      @include opacity(1);
+    }
+  }
+  
