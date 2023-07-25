@@ -162,6 +162,16 @@ form {
     display: block;
 }
 
+#mapa {
+    width: 100%;
+    height: 60vh;
+    
+    @media (max-width: 1000px) {
+        width: 100%;
+        height: 50vh;
+    }
+}
+
 // Implementación de condicionales
 $use-custom-height: true;
 @if $use-custom-height {
