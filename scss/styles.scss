@@ -152,6 +152,16 @@ form {
 
 #copyright {
     text-align: center;
+
+    @media (max-width: 1000px) {
+        font-size: smaller;
+    }
+}
+
+#emptyCol {
+    @media (max-width: 1000px) {
+        display: none;
+    }
 }
 
 #footerRow {

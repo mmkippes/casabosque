@@ -150,6 +150,17 @@ form {
 #copyright {
   text-align: center;
 }
+@media (max-width: 1000px) {
+  #copyright {
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 1000px) {
+  #emptyCol {
+    display: none;
+  }
+}
 
 #footerRow {
   align-items: baseline;
