@@ -1,0 +1,20 @@
+#carouselExample {
+    width: 80%;
+
+    @media (max-width: 1000px) {
+        width: 100%;
+        margin-top: 10vh;
+    }
+}
+
+.text-shadow {
+    text-shadow: 1px 1px 2px black;
+}
+
+.custom-fluid {
+    height: 79vh;
+
+    @media (max-width: 1000px) {
+        height: 60vh !important;
+    }
+}

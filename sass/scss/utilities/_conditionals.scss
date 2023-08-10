@@ -1,0 +1,10 @@
+$use-custom-height: true;
+@if $use-custom-height {
+  .custom-fluid {
+      height: 79vh;
+  }
+} @else {
+  .custom-fluid {
+      height: 60vh;
+  }
+}

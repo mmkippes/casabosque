@@ -1,0 +1,29 @@
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -moz-transform: $property;
+    -ms-transform: $property;
+    -o-transform: $property;
+    transform: $property;
+  }
+  
+  @mixin opacity($opacityValue) {
+    opacity: $opacityValue;
+  }
+  
+  .appear {
+    @include opacity(0);
+    @include transform(translateX(0) translateY(0));
+    transition: opacity 1s ease;
+    animation: fadeIn 5s ease 0.25s forwards;
+  
+    &.show {
+      @include opacity(1);
+    }
+  }
+
+  @keyframes fadeIn {
+    to {
+      @include opacity(1);
+    }
+  }
+  

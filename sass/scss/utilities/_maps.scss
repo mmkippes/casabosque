@@ -1,0 +1,11 @@
+$colors: (
+    nature: #00bb00,
+    dark: #000000,
+    snow: #00bbbb,
+);
+
+@each $key, $color in $colors {
+  .#{"" + $key}-text {
+    color: $color;
+  }
+}

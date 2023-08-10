@@ -1,0 +1,24 @@
+#imgBosque {
+    width: 100%;
+    height: 35vh;
+
+    @media (max-width: 1000px) {
+        width: 100%;
+        height: 15vh;
+    }
+}
+
+#cardImg {
+    width: 100%;
+    height: 43vh;
+
+    @media (max-width: 1000px) {
+        width: 100%;
+        height: auto;
+    }
+}
+
+#forestHouseIcon {
+    height: 32px;
+    width: 32px;
+}

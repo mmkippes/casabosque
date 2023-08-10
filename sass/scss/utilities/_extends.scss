@@ -1,0 +1,10 @@
+.button {
+    padding: 10px;
+    background-color: #009900;
+    color: #fff;
+  }
+  
+  .submit-button {
+    @extend .button;
+    font-size: 16px;
+  }

@@ -1,26 +1,8 @@
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: #d2f4d2;
-}
-
-main {
-  margin-top: 9vh;
-}
-
-header {
-  background-color: #d2f4d2;
-}
-
 #navColor {
   background-color: #d2f4d2 !important;
 }
 
-h1, h4, nav ul li a {
+nav ul li a {
   color: #009000;
   margin: 0;
 }
@@ -39,112 +21,20 @@ nav ul li a {
   text-decoration: none;
 }
 
-h2 {
-  color: #009000;
-  margin-top: 0;
-}
-
-p {
-  color: #008000;
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #d2f4d2;
 }
 
 footer {
   background-color: #d2f4d2;
   padding: 20px;
   margin-top: auto;
-}
-
-form {
-  margin-top: 20px;
-}
-
-#contactar {
-  padding: 10px 20px;
-  background-color: #009000;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  transition: background-color 0.5s ease;
-  margin-bottom: 1vh;
-}
-#contactar:hover {
-  background-color: #005000;
-}
-@media (min-width: 1250px) {
-  #contactar {
-    margin-top: 2vh;
-  }
-}
-
-#imgBosque {
-  width: 100%;
-  height: 35vh;
-}
-@media (max-width: 1000px) {
-  #imgBosque {
-    width: 100%;
-    height: 15vh;
-  }
-}
-
-.contactFormDiv {
-  padding: 5px;
-}
-
-.custom-fluid {
-  height: 79vh;
-}
-@media (max-width: 1000px) {
-  .custom-fluid {
-    height: 60vh !important;
-  }
-}
-
-#carouselExample {
-  width: 80%;
-}
-@media (max-width: 1000px) {
-  #carouselExample {
-    width: 100%;
-    margin-top: 10vh;
-  }
-}
-
-.text-shadow {
-  text-shadow: 1px 1px 2px black;
-}
-
-#cardImg {
-  width: 100%;
-  height: 43vh;
-}
-@media (max-width: 1000px) {
-  #cardImg {
-    width: 100%;
-    height: auto;
-  }
-}
-
-#pagSinTerminar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#tituloMain {
-  margin-bottom: 0;
-  font-weight: bold;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#forestHouseIcon {
-  height: 32px;
-  width: 32px;
 }
 
 #copyright {
@@ -170,6 +60,87 @@ form {
   display: block;
 }
 
+main {
+  margin-top: 9vh;
+}
+
+header {
+  background-color: #d2f4d2;
+}
+
+#tituloMain {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+#contactar {
+  padding: 10px 20px;
+  background-color: #009000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.5s ease;
+  margin-bottom: 1vh;
+}
+#contactar:hover {
+  background-color: #005000;
+}
+@media (min-width: 1250px) {
+  #contactar {
+    margin-top: 2vh;
+  }
+}
+
+#carouselExample {
+  width: 80%;
+}
+@media (max-width: 1000px) {
+  #carouselExample {
+    width: 100%;
+    margin-top: 10vh;
+  }
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 2px black;
+}
+
+.custom-fluid {
+  height: 79vh;
+}
+@media (max-width: 1000px) {
+  .custom-fluid {
+    height: 60vh !important;
+  }
+}
+
+#imgBosque {
+  width: 100%;
+  height: 35vh;
+}
+@media (max-width: 1000px) {
+  #imgBosque {
+    width: 100%;
+    height: 15vh;
+  }
+}
+
+#cardImg {
+  width: 100%;
+  height: 43vh;
+}
+@media (max-width: 1000px) {
+  #cardImg {
+    width: 100%;
+    height: auto;
+  }
+}
+
+#forestHouseIcon {
+  height: 32px;
+  width: 32px;
+}
+
 #mapa {
   width: 100%;
   height: 60vh;
@@ -179,6 +150,34 @@ form {
     width: 100%;
     height: 50vh;
   }
+}
+
+form {
+  margin-top: 20px;
+}
+
+.contactFormDiv {
+  padding: 5px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h4 {
+  color: #009000;
+  margin: 0;
+}
+
+h2 {
+  color: #009000;
+  margin-top: 0;
+}
+
+p {
+  color: #008000;
 }
 
 .custom-fluid {

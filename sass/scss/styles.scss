@@ -1,251 +1,29 @@
-// Definición de variables
-$colorGreen: #009000;
-$colorDarkGreen: #008000;
-$colorLightGreen: #d2f4d2;
-$colorHoverGreen: #005000;
+// variables
+@import "./utilities/variables";
 
-// Estilos convertidos
-body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-color: $colorLightGreen;
-}
+// layout
+@import "./layout/nav";
+@import "./layout/body";
+@import "./layout/footer";
+@import "./layout/main";
+@import "./layout/header";
 
-main {
-    margin-top: 9vh;
-}
-
-header {
-    background-color: $colorLightGreen;
-}
-
-#navColor {
-    background-color: $colorLightGreen !important;
-}
-
-h1, h4, nav ul li a {
-    color: $colorGreen;
-    margin: 0;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-}
-
-h2 {
-    color: $colorGreen;
-    margin-top: 0;
-}
-
-p {
-    color: $colorDarkGreen;
-}
-
-footer {
-    background-color: $colorLightGreen;
-    padding: 20px;
-    margin-top: auto;
-}
-
-form {
-    margin-top: 20px;
-}
-
-#contactar {
-    padding: 10px 20px;
-    background-color: $colorGreen;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    transition: background-color 0.5s ease;
-    margin-bottom: 1vh;
-
-    &:hover {
-        background-color: $colorHoverGreen;
-    }
-
-    @media (min-width: 1250px) {
-        margin-top: 2vh;
-    }
-}
-
-#imgBosque {
-    width: 100%;
-    height: 35vh;
-
-    @media (max-width: 1000px) {
-        width: 100%;
-        height: 15vh;
-    }
-}
-
-.contactFormDiv {
-    padding: 5px;
-}
-
-.custom-fluid {
-    height: 79vh;
-
-    @media (max-width: 1000px) {
-        height: 60vh !important;
-    }
-}
-
-#carouselExample {
-    width: 80%;
-
-    @media (max-width: 1000px) {
-        width: 100%;
-        margin-top: 10vh;
-    }
-}
-
-.text-shadow {
-    text-shadow: 1px 1px 2px black;
-}
-
-#cardImg {
-    width: 100%;
-    height: 43vh;
-
-    @media (max-width: 1000px) {
-        width: 100%;
-        height: auto;
-    }
-}
-
-#pagSinTerminar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#tituloMain {
-    margin-bottom: 0;
-    font-weight: bold;
-}
-
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#forestHouseIcon {
-    height: 32px;
-    width: 32px;
-  }
-
-#copyright {
-    text-align: center;
-
-    @media (max-width: 1000px) {
-        font-size: smaller;
-    }
-}
-
-#emptyCol {
-    @media (max-width: 1000px) {
-        display: none;
-    }
-}
-
-#footerRow {
-    align-items: baseline;
-}
-
-#redesSociales {
-    display: block;
-}
-
-#mapa {
-    width: 100%;
-    height: 60vh;
-    
-    @media (max-width: 1000px) {
-        width: 100%;
-        height: 50vh;
-    }
-}
+// components
+@import "./components/buttons";
+@import "./components/carousel";
+@import "./components/assets";
+@import "./components/mapa";
+@import "./components/form";
+@import "./components/format";
 
 // Implementación de condicionales
-$use-custom-height: true;
-@if $use-custom-height {
-  .custom-fluid {
-      height: 79vh;
-  }
-} @else {
-  .custom-fluid {
-      height: 60vh;
-  }
-}
+@import "./utilities/conditionals";
 
 // Implementación de each y maps
-$colors: (
-    nature: #00bb00,
-    dark: #000000,
-    snow: #00bbbb,
-);
-
-@each $key, $color in $colors {
-  .#{"" + $key}-text {
-    color: $color;
-  }
-}
+@import "./utilities/maps";
 
 // Implementación de extend
-.button {
-  padding: 10px;
-  background-color: #009900;
-  color: #fff;
-}
-
-.submit-button {
-  @extend .button;
-  font-size: 16px;
-}
+@import "./utilities/extends";
 
 // Implementación de mixins
-@mixin transform($property) {
-    -webkit-transform: $property;
-    -moz-transform: $property;
-    -ms-transform: $property;
-    -o-transform: $property;
-    transform: $property;
-  }
-  
-  @mixin opacity($opacityValue) {
-    opacity: $opacityValue;
-  }
-  
-  .appear {
-    @include opacity(0);
-    @include transform(translateX(0) translateY(0));
-    transition: opacity 1s ease;
-    animation: fadeIn 5s ease 0.25s forwards;
-  
-    &.show {
-      @include opacity(1);
-    }
-  }
-
-  @keyframes fadeIn {
-    to {
-      @include opacity(1);
-    }
-  }
-  
+@import "./utilities/mixins";
